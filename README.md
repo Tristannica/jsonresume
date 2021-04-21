@@ -1,7 +1,5 @@
 # jsonresume
 
-# Advanced Markdown with [David Wells](https://twitter.com/DavidWells)
-
 [Slides -> github.com/DavidWells/advanced-markdown](https://github.com/DavidWells/advanced-markdown/)
 
 ## Table of Contents
