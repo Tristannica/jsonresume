@@ -1,0 +1,378 @@
+name: 'Tristan Gilford'
+info:
+  label: 'Cloud Engineer at Wizards of the Coast'
+  image: ""
+  brief: 'Jack-of-all-trades, master of some.'
+contact:
+  email: gilford.tristan@gmail.com
+  phone: ""
+  website: 'https://tristancod.es'
+meta:
+  format: FRESH@^1.0.0-beta
+  modified: '2021-04-21T12:30:19.123Z'
+location:
+  country: US
+  address: 'Seattle, Washington'
+employment:
+  history:
+    -
+      position: 'Cloud Engineer'
+      employer: 'Wizards of the Coast'
+      start: '2020-02-28'
+      end: '2021-02-05'
+      url: 'https://www.linkedin.com/company/wizards-of-the-coast/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Cloud Architect'
+      employer: 'CINELAYA CORPORATION'
+      summary: "Created design specifications for a serverless web application prioritizing an evolutionary architecture to help mitigate and adapt to future changes across the system, design, and business\n\nOutlined roadmap for abstracting application functionality into individual lightweight microservices in order to support dev team's migration of legacy ASP.NET codebase to modern Javascript-based frameworks and tooling\n\nConstrained enterprise software footprint across service tiers to reduce associated compute and database costs\n\nConducted industry analysis to inform marketing strategy surrounding upcoming service launch. Identified key focus areas ensuring immediate user utility while validating value proposition to potential sponsors, partners, and investors"
+      start: '2019-02-28'
+      end: '2020-02-28'
+      url: 'https://www.linkedin.com/company/cinelaya-corporation/'
+      keywords: []
+      highlights: []
+    -
+      position: 'System Analyst I'
+      employer: 'Amazon Web Services'
+      summary: "Database Services DevOps Team: GovCloud ITAR Operator for Amazon Relational Database Service (RDS)\n• Engaged with cross-platform development teams to implement modifications and new feature builds to RDS codebase according to internal change management protocol\n• Served in a recurrent (bi-weekly) on-call capacity addressing high-severity issues affecting RDS customer data plane & service control plane\n• Streamlined tracking & reporting of RDS operational performance metrics for weekly ops review meetings\n• Replicated commercial AWS Database Migration Service (DMS) database AMIs (Linux & Windows) onto GovCloud partition\n• Conducted preliminary research for implementation of DMS for new GovCloud AWS region build\n\nSupport Services DevOps Team: GovCloud ITAR Operator for Amazon Support API Service (SAPI)\n• Primary GovCloud liaison for Cape Town, SA-based development team\n• Migrated production EC2 capacity from legacy hardware to new capacity provisioning system\n• Intermediary for Application Security & GovCloud compliance review processes prior to new region launch\n• Created, maintained, and white-listed internal & external front-end VIPs for prod & testing environments"
+      start: '2018-02-28'
+      end: '2018-10-31'
+      url: 'https://www.linkedin.com/company/amazon-web-services/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Director Of Technology'
+      employer: 'Denver Biolabs'
+      summary: "Implemented full-scale rebuild and redesign of existing infrastructure, architecture, web and database tiers, as well as payment and email systems\n\nPursued and orchestrated strategic partnerships"
+      start: '2017-11-30'
+      end: '2018-02-28'
+      url: ""
+      keywords: []
+      highlights: []
+    -
+      position: 'Portfolio Management Analyst'
+      employer: 'Self Employed'
+      summary: "Performed quantitative portfolio equity analysis on clients' individual investment and retirement accounts\n\nDetermined appropriate distribution of funds across financial instruments, market sectors, and geographic regions according to clients' financial objectives\n\nProvided multiple asset allocation strategies to achieve clients' stated goals while minimizing financial outlay needed for commission payments, exit fees, and capital gains tax obligations"
+      start: '2014-01-31'
+      end: '2016-06-30'
+      url: 'https://www.linkedin.com/company/indpendent-contractor/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Capital & Secondary Markets Analyst'
+      employer: 'NewDay USA'
+      summary: "Position reported directly to VP of Finance and required high-level performance, adaptability, and competency with minimal direct supervision. In addition to secondary-specific responsibilities, the scope of this position was expanded to include direct oversight of certain critical processes native to other divisions.\n- MBS Pool Allocation and Securitization\n- Trade Execution and Portfolio Hedging\n- Database Maintenance, Analysis, Modeling, and Reporting\n- Affinity Partnership (Green Planet Servicing)\n- Reverse Mortgage Division\n- Subservicing Oversight\n- Product Rate-Pricing and Risk Analysis\n- Compliance Support"
+      start: '2013-02-28'
+      end: '2013-09-30'
+      url: 'https://www.linkedin.com/company/newday-usa/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Mortgage Loan Processor'
+      employer: 'NewDay USA'
+      summary: "Position reported to the manager of forward processing and served as principal intermediary between  sales, underwriting, closing, and post-closing departments throughout approval process. Acted as principal point of contact for all third parties.\n\nManaged individual pipeline averaging over twenty monthly loan closings while maintaining strict adherence to both federal (VA/FHA), state, and proprietary regulatory guidelines.\n\nResponsibilities included, but were not limited to, the vetting of all employment records, VA documentation, appraisals, incomes, credit histories, title work, encumbrances and insurance policies so as to establish qualification."
+      start: '2012-09-30'
+      end: '2013-02-28'
+      url: 'https://www.linkedin.com/company/newday-usa/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Logistics Analyst'
+      employer: 'OZTEK Manufacturing Pty. Ltd.'
+      summary: "Provided logistical support to home office through the coordination of suppliers, shippers, and intermediate entities.\n\nProduced broad market analysis (AUD/USD) currency forecasting, commodity price trends, interest rate analysis) in order to highlight areas in supply chain with elevated risk.\n\nResearched commodity, currency, and interest rate hedging vehicles (futures, ETFs, and swaps) to address this risk."
+      start: '2011-01-31'
+      end: '2011-12-31'
+      url: ""
+      keywords: []
+      highlights: []
+    -
+      position: 'Laboratory Intern | Center for Superconductivity Research'
+      employer: 'University of Maryland College Park'
+      summary: "•\tConducted thorough analysis of existing research concerning methods/techniques for mitigating the onset of decoherence between entangled particles due to interfering effects from the surrounding environment\n\n•\tCreated, through rigorous experimental development, a copper-epoxy microwave ‘powder’ filter capable of attenuating environmental background noise within a quantum system across a range of high frequencies\n\n•\tPresented findings to a panel of physics and computer science luminaries at the 2005 Intel International Science & Engineering Fair where my teammate and I were awarded 2nd place in the Team Physics category"
+      start: '2004-10-31'
+      end: '2005-05-31'
+      url: 'https://www.linkedin.com/school/university-of-maryland/'
+      keywords: []
+      highlights: []
+    -
+      position: 'Research Intern | Heliophysics Science Division'
+      employer: 'NASA Goddard Space Flight Center'
+      summary: "•\tPrepared and maintained a class-10,000 cleanroom for the EUNIS (Extreme Ultraviolet Normal-Incidence Spectrograph) Mission research team\n\n•\tExpedited rocket-casing assembly and assisted in the instrument’s optical alignment\n\n•\tCalibrated sensitive laser optics integral to the EUNIS mission profile\n\n•\tPrepared data array casings, vacuum-sealed instrument components, and provided technical and logistical support for high-G ‘shock-pulse’ testing to determine instrument flight viability and survivability\n\n•\tRecognized for superlative performance with the Robert H. Goddard Award for Exceptional Achievement in Science"
+      start: '2003-06-30'
+      end: '2004-08-31'
+      url: 'https://www.linkedin.com/company/nasa-goddard-space-flight-center/'
+      keywords: []
+      highlights: []
+education:
+  level: ""
+  history:
+    -
+      institution: 'University of Maryland College Park'
+      start: '2005-12-31'
+      end: '2010-12-31'
+      grade: ""
+      curriculum: []
+      summary: ""
+      area: 'Economics (Statistics)'
+      studyType: B.A.
+    -
+      institution: 'Galvanize Inc'
+      start: '2017-12-31'
+      end: '2017-12-31'
+      grade: ""
+      curriculum: []
+      summary: ""
+      area: 'Web Development Immersive'
+      studyType: 'Full Stack Developer'
+    -
+      institution: 'Elf-Spotting Academy'
+      start: '2019-12-31'
+      end: '2019-12-31'
+      grade: 🥇💯
+      curriculum: []
+      summary: ""
+      area: 'Elf Spotting'
+      studyType: 'Bachelor''s degree'
+service:
+  history:
+    -
+      type: volunteer
+      position: 'Teaching Assistant'
+      organization: AmeriCorps
+      start: '2017-03-31'
+      end: '2017-05-31'
+      url: 'https://www.linkedin.com/company/491378'
+      summary: 'Skinner Middle School (Intro to Web Development & Design)'
+      highlights: []
+    -
+      type: volunteer
+      position: 'Instructor - Amazon Alexa Skills Developer Workshop'
+      organization: 'Galvanize Inc'
+      start: '2017-09-30'
+      end: '2017-12-31'
+      url: 'https://www.linkedin.com/company/2652594'
+      summary: 'Educated workshop attendees in voice user interfaces (VUI) and speech synthesis markup language (SSML). Guided attendees through a hands-on implementation of core AWS services used in creating a fully deployable Alexa Skill. Services used included: AWS Lambda (Node.js), AWS Lex, AWS Polly, & AWS IAM. Guided attendees through Amazon Developer account creation and integration of Alexa SDK for deployment to Alexa Skills Store.'
+      highlights: []
+skills:
+  sets:
+    -
+      name: 'Amazon Web Services (AWS)'
+      level: ""
+      skills: []
+    -
+      name: 'Software Development'
+      level: ""
+      skills: []
+    -
+      name: JavaScript
+      level: ""
+      skills: []
+    -
+      name: 'Web Development'
+      level: ""
+      skills: []
+    -
+      name: Research
+      level: ""
+      skills: []
+    -
+      name: 'Cloud Services'
+      level: ""
+      skills: []
+    -
+      name: Microservices
+      level: ""
+      skills: []
+    -
+      name: Equities
+      level: ""
+      skills: []
+    -
+      name: PostgreSQL
+      level: ""
+      skills: []
+    -
+      name: Databases
+      level: ""
+      skills: []
+    -
+      name: Analytics
+      level: ""
+      skills: []
+    -
+      name: SQL
+      level: ""
+      skills: []
+    -
+      name: 'Microsoft Excel'
+      level: ""
+      skills: []
+    -
+      name: Investments
+      level: ""
+      skills: []
+    -
+      name: MySQL
+      level: ""
+      skills: []
+    -
+      name: Consulting
+      level: ""
+      skills: []
+    -
+      name: 'Adobe Creative Suite'
+      level: ""
+      skills: []
+    -
+      name: 'Cloud Computing IaaS'
+      level: ""
+      skills: []
+    -
+      name: Tech-savvy
+      level: ""
+      skills: []
+    -
+      name: Economics
+      level: ""
+      skills: []
+    -
+      name: 'Amazon S3'
+      level: ""
+      skills: []
+    -
+      name: Github
+      level: ""
+      skills: []
+    -
+      name: 'Space Systems'
+      level: ""
+      skills: []
+    -
+      name: 'Software Development Life Cycle (SDLC)'
+      level: ""
+      skills: []
+    -
+      name: Ubuntu
+      level: ""
+      skills: []
+    -
+      name: Linux
+      level: ""
+      skills: []
+    -
+      name: Node.js
+      level: ""
+      skills: []
+    -
+      name: 'Amazon EC2'
+      level: ""
+      skills: []
+    -
+      name: 'Agile Methodologies'
+      level: ""
+      skills: []
+    -
+      name: 'Amazon RDS'
+      level: ""
+      skills: []
+    -
+      name: 'Cloud Infrastructure'
+      level: ""
+      skills: []
+    -
+      name: 'Solution Architecture'
+      level: ""
+      skills: []
+    -
+      name: HTML5
+      level: ""
+      skills: []
+    -
+      name: CSS3
+      level: ""
+      skills: []
+    -
+      name: Python
+      level: ""
+      skills: []
+    -
+      name: 'Cloud Computing'
+      level: ""
+      skills: []
+    -
+      name: 'Financial Modeling'
+      level: ""
+      skills: []
+    -
+      name: Bash
+      level: ""
+      skills: []
+    -
+      name: 'Shell Scripting'
+      level: ""
+      skills: []
+    -
+      name: 'Risk Management'
+      level: ""
+      skills: []
+    -
+      name: 'Web Design'
+      level: ""
+      skills: []
+    -
+      name: 'Twitter API'
+      level: ""
+      skills: []
+    -
+      name: 'Technology Advisory'
+      level: ""
+      skills: []
+    -
+      name: 'Financial Analysis'
+      level: ""
+      skills: []
+    -
+      name: 'Raspberry Pi'
+      level: ""
+      skills: []
+    -
+      name: 'Infrastructure as a Service (IaaS)'
+      level: ""
+      skills: []
+    -
+      name: Analysis
+      level: ""
+      skills: []
+    -
+      name: 'Chatbot Design'
+      level: ""
+      skills: []
+    -
+      name: 'Microsoft Office'
+      level: ""
+      skills: []
+writing: []
+recognition:
+  -
+    title: 'NASA Robert H. Goddard Award for Exceptional Achievement in Science'
+    date: '2008-09-30'
+    from: NASA
+    summary: '"Awarded to the EUNIS Team for creating an innovative sounding rocket instrument that exceeded its Comprehensive Mission Success criteria on both of its first two flights."'
+  -
+    title: 'Intel ISEF 2nd Place (Team Physics)'
+    date: '2005-06-30'
+    from: 'Intel ISEF (International Science & Engineering Fair)'
+    summary: 'Awarded 2nd Place in the Team Physics category at the 2005 Intel International Science & Engineering Fair in Phoenix, AZ for the research, development, and demonstration of a ''high-frequency noise attenuation prototype'' for quantum computing systems.'
+social:
+  -
+    label: LinkedIn
+    network: LinkedIn
+    url: 'https://www.linkedin.com/in/tristannica/'
+    user: tristannica
+interests: []
+testimonials: 0
+languages:
+  -
+    language: en
+    fluency: 'Native Speaker'

@@ -1,0 +1,427 @@
+{
+  "basics": {
+    "label": "Cloud Engineer at Wizards of the Coast",
+    "email": "gilford.tristan@gmail.com",
+    "phone": "",
+    "website": "https://tristancod.es",
+    "name": "Tristan Gilford",
+    "summary": "Jack-of-all-trades, master of some.",
+    "picture": "",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "tristannica",
+        "url": "https://www.linkedin.com/in/tristannica/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Wizards of the Coast",
+      "website": "https://www.linkedin.com/company/wizards-of-the-coast/",
+      "position": "Cloud Engineer",
+      "startDate": "2020-02-28",
+      "endDate": "2021-02-05",
+      "highlights": []
+    },
+    {
+      "company": "CINELAYA CORPORATION",
+      "website": "https://www.linkedin.com/company/cinelaya-corporation/",
+      "position": "Cloud Architect",
+      "startDate": "2019-02-28",
+      "endDate": "2020-02-28",
+      "summary": "Created design specifications for a serverless web application prioritizing an evolutionary architecture to help mitigate and adapt to future changes across the system, design, and business\n\nOutlined roadmap for abstracting application functionality into individual lightweight microservices in order to support dev team's migration of legacy ASP.NET codebase to modern Javascript-based frameworks and tooling\n\nConstrained enterprise software footprint across service tiers to reduce associated compute and database costs\n\nConducted industry analysis to inform marketing strategy surrounding upcoming service launch. Identified key focus areas ensuring immediate user utility while validating value proposition to potential sponsors, partners, and investors",
+      "highlights": []
+    },
+    {
+      "company": "Amazon Web Services",
+      "website": "https://www.linkedin.com/company/amazon-web-services/",
+      "position": "System Analyst I",
+      "startDate": "2018-02-28",
+      "endDate": "2018-10-31",
+      "summary": "Database Services DevOps Team: GovCloud ITAR Operator for Amazon Relational Database Service (RDS)\n• Engaged with cross-platform development teams to implement modifications and new feature builds to RDS codebase according to internal change management protocol\n• Served in a recurrent (bi-weekly) on-call capacity addressing high-severity issues affecting RDS customer data plane & service control plane\n• Streamlined tracking & reporting of RDS operational performance metrics for weekly ops review meetings\n• Replicated commercial AWS Database Migration Service (DMS) database AMIs (Linux & Windows) onto GovCloud partition\n• Conducted preliminary research for implementation of DMS for new GovCloud AWS region build\n\nSupport Services DevOps Team: GovCloud ITAR Operator for Amazon Support API Service (SAPI)\n• Primary GovCloud liaison for Cape Town, SA-based development team\n• Migrated production EC2 capacity from legacy hardware to new capacity provisioning system\n• Intermediary for Application Security & GovCloud compliance review processes prior to new region launch\n• Created, maintained, and white-listed internal & external front-end VIPs for prod & testing environments",
+      "highlights": []
+    },
+    {
+      "company": "Denver Biolabs",
+      "website": "",
+      "position": "Director Of Technology",
+      "startDate": "2017-11-30",
+      "endDate": "2018-02-28",
+      "summary": "Implemented full-scale rebuild and redesign of existing infrastructure, architecture, web and database tiers, as well as payment and email systems\n\nPursued and orchestrated strategic partnerships",
+      "highlights": []
+    },
+    {
+      "company": "Self Employed",
+      "website": "https://www.linkedin.com/company/indpendent-contractor/",
+      "position": "Portfolio Management Analyst",
+      "startDate": "2014-01-31",
+      "endDate": "2016-06-30",
+      "summary": "Performed quantitative portfolio equity analysis on clients' individual investment and retirement accounts\n\nDetermined appropriate distribution of funds across financial instruments, market sectors, and geographic regions according to clients' financial objectives\n\nProvided multiple asset allocation strategies to achieve clients' stated goals while minimizing financial outlay needed for commission payments, exit fees, and capital gains tax obligations",
+      "highlights": []
+    },
+    {
+      "company": "NewDay USA",
+      "website": "https://www.linkedin.com/company/newday-usa/",
+      "position": "Capital & Secondary Markets Analyst",
+      "startDate": "2013-02-28",
+      "endDate": "2013-09-30",
+      "summary": "Position reported directly to VP of Finance and required high-level performance, adaptability, and competency with minimal direct supervision. In addition to secondary-specific responsibilities, the scope of this position was expanded to include direct oversight of certain critical processes native to other divisions.\n- MBS Pool Allocation and Securitization\n- Trade Execution and Portfolio Hedging\n- Database Maintenance, Analysis, Modeling, and Reporting\n- Affinity Partnership (Green Planet Servicing)\n- Reverse Mortgage Division\n- Subservicing Oversight\n- Product Rate-Pricing and Risk Analysis\n- Compliance Support",
+      "highlights": []
+    },
+    {
+      "company": "NewDay USA",
+      "website": "https://www.linkedin.com/company/newday-usa/",
+      "position": "Mortgage Loan Processor",
+      "startDate": "2012-09-30",
+      "endDate": "2013-02-28",
+      "summary": "Position reported to the manager of forward processing and served as principal intermediary between  sales, underwriting, closing, and post-closing departments throughout approval process. Acted as principal point of contact for all third parties.\n\nManaged individual pipeline averaging over twenty monthly loan closings while maintaining strict adherence to both federal (VA/FHA), state, and proprietary regulatory guidelines.\n\nResponsibilities included, but were not limited to, the vetting of all employment records, VA documentation, appraisals, incomes, credit histories, title work, encumbrances and insurance policies so as to establish qualification.",
+      "highlights": []
+    },
+    {
+      "company": "OZTEK Manufacturing Pty. Ltd.",
+      "website": "",
+      "position": "Logistics Analyst",
+      "startDate": "2011-01-31",
+      "endDate": "2011-12-31",
+      "summary": "Provided logistical support to home office through the coordination of suppliers, shippers, and intermediate entities.\n\nProduced broad market analysis (AUD/USD) currency forecasting, commodity price trends, interest rate analysis) in order to highlight areas in supply chain with elevated risk.\n\nResearched commodity, currency, and interest rate hedging vehicles (futures, ETFs, and swaps) to address this risk.",
+      "highlights": []
+    },
+    {
+      "company": "University of Maryland College Park",
+      "website": "https://www.linkedin.com/school/university-of-maryland/",
+      "position": "Laboratory Intern | Center for Superconductivity Research",
+      "startDate": "2004-10-31",
+      "endDate": "2005-05-31",
+      "summary": "•\tConducted thorough analysis of existing research concerning methods/techniques for mitigating the onset of decoherence between entangled particles due to interfering effects from the surrounding environment\n\n•\tCreated, through rigorous experimental development, a copper-epoxy microwave ‘powder’ filter capable of attenuating environmental background noise within a quantum system across a range of high frequencies\n\n•\tPresented findings to a panel of physics and computer science luminaries at the 2005 Intel International Science & Engineering Fair where my teammate and I were awarded 2nd place in the Team Physics category",
+      "highlights": []
+    },
+    {
+      "company": "NASA Goddard Space Flight Center",
+      "website": "https://www.linkedin.com/company/nasa-goddard-space-flight-center/",
+      "position": "Research Intern | Heliophysics Science Division",
+      "startDate": "2003-06-30",
+      "endDate": "2004-08-31",
+      "summary": "•\tPrepared and maintained a class-10,000 cleanroom for the EUNIS (Extreme Ultraviolet Normal-Incidence Spectrograph) Mission research team\n\n•\tExpedited rocket-casing assembly and assisted in the instrument’s optical alignment\n\n•\tCalibrated sensitive laser optics integral to the EUNIS mission profile\n\n•\tPrepared data array casings, vacuum-sealed instrument components, and provided technical and logistical support for high-G ‘shock-pulse’ testing to determine instrument flight viability and survivability\n\n•\tRecognized for superlative performance with the Robert H. Goddard Award for Exceptional Achievement in Science",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Maryland College Park",
+      "gpa": "",
+      "courses": [],
+      "startDate": "2005-12-31",
+      "endDate": "2010-12-31",
+      "area": "Economics (Statistics)",
+      "studyType": "B.A."
+    },
+    {
+      "institution": "Galvanize Inc",
+      "gpa": "",
+      "courses": [],
+      "startDate": "2017-12-31",
+      "endDate": "2017-12-31",
+      "area": "Web Development Immersive",
+      "studyType": "Full Stack Developer"
+    },
+    {
+      "institution": "Elf-Spotting Academy",
+      "gpa": "🥇💯",
+      "courses": [],
+      "startDate": "2019-12-31",
+      "endDate": "2019-12-31",
+      "area": "Elf Spotting",
+      "studyType": "Bachelor's degree"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Research",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Services",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Equities",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Investments",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Consulting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Creative Suite",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing IaaS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Tech-savvy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Economics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon S3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Github",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Space Systems",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development Life Cycle (SDLC)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ubuntu",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon EC2",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon RDS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Solution Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML5",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS3",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Financial Modeling",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Shell Scripting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Risk Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Twitter API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technology Advisory",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Financial Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Raspberry Pi",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Infrastructure as a Service (IaaS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Chatbot Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "AmeriCorps",
+      "position": "Teaching Assistant",
+      "startDate": "2017-03-31",
+      "endDate": "2017-05-31",
+      "website": "https://www.linkedin.com/company/491378",
+      "summary": "Skinner Middle School (Intro to Web Development & Design)",
+      "highlights": []
+    },
+    {
+      "organization": "Galvanize Inc",
+      "position": "Instructor - Amazon Alexa Skills Developer Workshop",
+      "startDate": "2017-09-30",
+      "endDate": "2017-12-31",
+      "website": "https://www.linkedin.com/company/2652594",
+      "summary": "Educated workshop attendees in voice user interfaces (VUI) and speech synthesis markup language (SSML). Guided attendees through a hands-on implementation of core AWS services used in creating a fully deployable Alexa Skill. Services used included: AWS Lambda (Node.js), AWS Lex, AWS Polly, & AWS IAM. Guided attendees through Amazon Developer account creation and integration of Alexa SDK for deployment to Alexa Skills Store.",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "NASA Robert H. Goddard Award for Exceptional Achievement in Science",
+      "date": "2008-09-30",
+      "awarder": "NASA",
+      "summary": "\"Awarded to the EUNIS Team for creating an innovative sounding rocket instrument that exceeded its Comprehensive Mission Success criteria on both of its first two flights.\""
+    },
+    {
+      "title": "Intel ISEF 2nd Place (Team Physics)",
+      "date": "2005-06-30",
+      "awarder": "Intel ISEF (International Science & Engineering Fair)",
+      "summary": "Awarded 2nd Place in the Team Physics category at the 2005 Intel International Science & Engineering Fair in Phoenix, AZ for the research, development, and demonstration of a 'high-frequency noise attenuation prototype' for quantum computing systems."
+    }
+  ],
+  "interests": [],
+  "references": 0,
+  "languages": [
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Tristan Gilford</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+	<style>
+		/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+
+body {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background: #393e46;
+    /* background: #f8f8f8; */
+    /* margin: 50px 0 100px; */
+    margin: 0;
+    letter-spacing: .3px;
+    color: #39424B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1px; }
+
+h2 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: .5px; }
+
+h3 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: .4px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+h3.bold {
+    font-weight: 700; }
+
+h4 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+h4.bold {
+    font-weight: 700; }
+
+h5 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 11px; }
+h5.italic {
+    font-style: italic; }
+
+h6 {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 11px; }
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover, a:hover > i.fa-external-link, .info-tag-container a:hover .fa.fa-external-link {
+    color: #2895F1;
+}
+
+a .fa-external-link {
+    font-size: 8px;
+    margin-left: 2px;
+    vertical-align: text-top;
+    color: #999;
+}
+
+p, li {
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: .4px;
+}
+
+blockquote {
+    font-size: 11px;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 25px; }
+
+em {
+    color: #999;
+}
+
+ul {
+    margin: 10px 0 0;
+    -webkit-padding-start: 25px;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+ul.minimal {
+    list-style: none;
+    padding: 0;
+}
+
+ul.minimal li {
+    margin-bottom: 3px;
+    padding-left: 0;
+}
+
+ul.two-column {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 28px;
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 28px;
+    column-gap: 28px;
+}
+
+ul.two-column li {
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+@page {
+    size: A4;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.keyline {
+    width: 45px;
+    /* margin: 8px 0 10px; */
+    margin: 4px 0 10px;
+    border-top: 1px solid #FF5701;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.profile-header {
+    width: auto;
+    max-width:  300px;
+    margin-right: 50px;
+}
+*/
+
+/*
+.profile-pic {
+    width: auto;
+    max-width: 800px;
+    margin-right: auto;
+    /* margin-top: -5px; */
+    /* margin-right: 18px; *//*
+}
+*/
+
+.profile-pic img {
+    height: 150px;
+    width: 120px;
+    border-radius: 10%;
+    padding: 2px;
+    border: 2px solid #FF5701;
+    object-fit: scale-down;
+    background: white;
+    float: right;
+}
+
+.summary {
+    margin: 5px 0 5px; }
+
+/* Layouts */
+.page {
+    background: #222831;
+    color: #eeeeee;
+    /* width: 612px; */
+    min-height: 792px;
+    display: block;
+    margin: 0 auto;
+    border-top: 10px solid #FF5701;
+    /* padding: 36px 22px 30px 34px; */
+    padding: 50px; /* 50px calc(50px + 10%);*/
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-column, .profile-header {
+    float: left;
+    /* width: 160px; */
+    width: 300px;
+    /* margin-right: 20px; */
+    margin-right: 50px;
+    word-wrap: break-word;
+}
+
+.right-column, .profile-pic {
+    width: auto;
+    overflow: hidden;
+    max-width: 850px;
+    /* margin-right: 50px; */
+    margin: 0 auto;
+}
+
+.item {
+    /* margin-bottom: 15px; */
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #393e46;
+}
+
+.item:first-child, .title + .item {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.title {
+    background-color: #393e46;
+}
+
+.title > i {
+    float: left;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.right-column > .container > .title {
+    margin-bottom: 15px;
+}
+
+.gpa {
+    border: 1px solid white;
+    border-radius: 35%;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .page {
+        padding: 35px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    .skills-container > section > ul > li
+    /*,.languages-container > ul > li */{
+        display: inline;
+    }
+
+    .skills-container > section > ul > li > h6
+    /*,.languages-container > ul > li > h6 */{
+        padding-right: 10px;
+        display: inline;
+    }
+
+    .info-tag-container .info-text {
+        font-size: 14px !important;
+    }
+
+    h3 {
+        font-size: 16px !important;
+    }
+
+    h4 {
+        font-size: 14px !important;
+    }
+
+    h6 {
+        font-size: 12px !important;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    .item {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media print {
+    body {
+        margin: 0;
+        background: white;
+        color: #000;
+    }
+
+    main {
+        background: white !important;
+        color: black !important;
+    }
+
+    @page {
+        border-top: 2px solid white;
+    }
+
+    .page {
+        color: #000;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 35px 0 35px; /* 35px  35px; */
+        box-shadow: none;
+    }
+
+    .title {
+        background-color: #393e46;
+        color: white
+    }
+
+    .keyline {
+        width: 45px;
+        /* margin: 8px 0 10px; */
+        margin: 4px 0 10px;
+        border-top: 2px solid #FF5701;
+    }
+
+    .page .resume-header,
+    .page .resume-content {
+        padding: 0 35px 0 35px;
+    }
+
+    .container > section {
+        page-break-inside: avoid;
+    }
+
+    .left-column {
+        width: 250px;
+        margin-right: 35px;
+    }
+
+    .left-column .container {
+        page-break-inside: avoid;
+    }
+
+    .fa-external-link {
+        display: none;
+    }
+
+    .gpa {
+        border: 1px solid #393e46;
+        margin-left: 10px;
+    }
+}
+
+/* Components */
+.info-tag-container {
+    margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+    font-size: 14px;
+    width: 12px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+    font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+    font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+    font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+    font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+    width: auto;
+    font-size: 8px;
+    margin-left: 2px;
+    vertical-align: text-top;
+    color: #999;
+}
+
+.info-tag-container .info-text {
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+    /* width: 139px; */
+}
+
+.references-container .fa {
+    font-size: 14px;
+}
+
+	</style>
+	</head>
+	<body>
+		<main id="resume" class="page">
+			<header class="resume-header clearfix">
+			    <div class="profile-header">
+			        <h1 class="display-block">Tristan Gilford</h1>
+			        <h2 class="display-block">Cloud Engineer at Wizards of the Coast</h2>
+			    </div>
+			</header>
+			<div class="resume-content">
+				<aside class="left-column">
+					<div class="container about-container">
+					    <div class="title">
+					        <h3>About</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-map-marker"></i>
+					        
+					                <h6 class="info-text">Seattle, Washington</h6>
+					        </div>
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-envelope"></i>
+					        
+					                <h6 class="info-text">gilford.tristan@gmail.com</h6>
+					        </div>
+					
+					
+					        <div class="info-tag-container">
+					                    <i class="fa fa-desktop"></i>
+					        
+					                <h6 class="info-text">
+					                    <a href="https://tristancod.es" target="_blank">
+					                        tristancod.es <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					                </h6>
+					        </div>
+					
+					                        <div class="info-tag-container">
+					                                    <i class="fa fa-linkedin-square"></i>
+					                        
+					                                <h6 class="info-text">
+					                                    <a href="https://www.linkedin.com/in/tristannica/" target="_blank">
+					                                        in/tristannica <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                    </a>
+					                                </h6>
+					                        </div>
+					</div>
+					    <div class="skills-container">
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Amazon Web Services (AWS)</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Software Development</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>JavaScript</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Web Development</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Research</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Cloud Services</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Microservices</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Equities</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>PostgreSQL</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Databases</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Analytics</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>SQL</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Microsoft Excel</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Investments</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>MySQL</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Consulting</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Adobe Creative Suite</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Cloud Computing IaaS</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Tech-savvy</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Economics</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Amazon S3</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Github</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Space Systems</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Software Development Life Cycle (SDLC)</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Ubuntu</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Linux</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Node.js</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Amazon EC2</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Agile Methodologies</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Amazon RDS</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Cloud Infrastructure</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Solution Architecture</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>HTML5</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>CSS3</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Python</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Cloud Computing</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Financial Modeling</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Bash</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Shell Scripting</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Risk Management</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Web Design</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Twitter API</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Technology Advisory</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Financial Analysis</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Raspberry Pi</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Infrastructure as a Service (IaaS)</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Analysis</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Chatbot Design</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Microsoft Office</h3>
+					                        <div class="keyline"></div>
+					                    </div>
+					            </section>
+					    </div>
+					    <div class="container languages-container">
+					        <div class="title">
+					            <h3>Languages</h3>
+					            <div class="keyline"></div>
+					        </div>
+					
+					        <ul class="minimal">
+					                <li>
+					                    <h6>en <em class="pull-right ">(Native Speaker)</em></h6>
+					                </li>
+					        </ul>
+					    </div>
+				</aside>
+				<div class="right-column">
+					        <div class="container summary-container">
+					            <div class="title">
+					                    <i class="fa fas fa-file-alt"></i>
+					                <h3>Summary</h3>
+					                <div class="keyline"></div>
+					            </div>
+					            <p class="summary">
+					                Jack-of-all-trades, master of some.
+					            </p>
+					        </div>
+					<div class="container work-container">
+					    <div class="title">
+					            <i class="fa fas fa-user-tie"></i>
+					        <h3>Experience</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/wizards-of-the-coast/" target="_blank">
+					                            Wizards of the Coast <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">02/2020</span>
+					                            <span class="endDate"> - 02/2021</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Cloud Engineer</h4>
+					
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/cinelaya-corporation/" target="_blank">
+					                            CINELAYA CORPORATION <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">02/2019</span>
+					                            <span class="endDate"> - 02/2020</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Cloud Architect</h4>
+					
+					            <p class="summary">Created design specifications for a serverless web application prioritizing an evolutionary architecture to help mitigate and adapt to future changes across the system, design, and business
+					
+					Outlined roadmap for abstracting application functionality into individual lightweight microservices in order to support dev team's migration of legacy ASP.NET codebase to modern Javascript-based frameworks and tooling
+					
+					Constrained enterprise software footprint across service tiers to reduce associated compute and database costs
+					
+					Conducted industry analysis to inform marketing strategy surrounding upcoming service launch. Identified key focus areas ensuring immediate user utility while validating value proposition to potential sponsors, partners, and investors</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/amazon-web-services/" target="_blank">
+					                            Amazon Web Services <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">02/2018</span>
+					                            <span class="endDate"> - 10/2018</span>
+					                </h5>
+					            </div>
+					
+					            <h4>System Analyst I</h4>
+					
+					            <p class="summary">Database Services DevOps Team: GovCloud ITAR Operator for Amazon Relational Database Service (RDS)
+					• Engaged with cross-platform development teams to implement modifications and new feature builds to RDS codebase according to internal change management protocol
+					• Served in a recurrent (bi-weekly) on-call capacity addressing high-severity issues affecting RDS customer data plane & service control plane
+					• Streamlined tracking & reporting of RDS operational performance metrics for weekly ops review meetings
+					• Replicated commercial AWS Database Migration Service (DMS) database AMIs (Linux & Windows) onto GovCloud partition
+					• Conducted preliminary research for implementation of DMS for new GovCloud AWS region build
+					
+					Support Services DevOps Team: GovCloud ITAR Operator for Amazon Support API Service (SAPI)
+					• Primary GovCloud liaison for Cape Town, SA-based development team
+					• Migrated production EC2 capacity from legacy hardware to new capacity provisioning system
+					• Intermediary for Application Security & GovCloud compliance review processes prior to new region launch
+					• Created, maintained, and white-listed internal & external front-end VIPs for prod & testing environments</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Denver Biolabs
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">11/2017</span>
+					                            <span class="endDate"> - 02/2018</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Director Of Technology</h4>
+					
+					            <p class="summary">Implemented full-scale rebuild and redesign of existing infrastructure, architecture, web and database tiers, as well as payment and email systems
+					
+					Pursued and orchestrated strategic partnerships</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/indpendent-contractor/" target="_blank">
+					                            Self Employed <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/2014</span>
+					                            <span class="endDate"> - 06/2016</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Portfolio Management Analyst</h4>
+					
+					            <p class="summary">Performed quantitative portfolio equity analysis on clients' individual investment and retirement accounts
+					
+					Determined appropriate distribution of funds across financial instruments, market sectors, and geographic regions according to clients' financial objectives
+					
+					Provided multiple asset allocation strategies to achieve clients' stated goals while minimizing financial outlay needed for commission payments, exit fees, and capital gains tax obligations</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/newday-usa/" target="_blank">
+					                            NewDay USA <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">02/2013</span>
+					                            <span class="endDate"> - 09/2013</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Capital &amp; Secondary Markets Analyst</h4>
+					
+					            <p class="summary">Position reported directly to VP of Finance and required high-level performance, adaptability, and competency with minimal direct supervision. In addition to secondary-specific responsibilities, the scope of this position was expanded to include direct oversight of certain critical processes native to other divisions.
+					- MBS Pool Allocation and Securitization
+					- Trade Execution and Portfolio Hedging
+					- Database Maintenance, Analysis, Modeling, and Reporting
+					- Affinity Partnership (Green Planet Servicing)
+					- Reverse Mortgage Division
+					- Subservicing Oversight
+					- Product Rate-Pricing and Risk Analysis
+					- Compliance Support</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/newday-usa/" target="_blank">
+					                            NewDay USA <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">09/2012</span>
+					                            <span class="endDate"> - 02/2013</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Mortgage Loan Processor</h4>
+					
+					            <p class="summary">Position reported to the manager of forward processing and served as principal intermediary between  sales, underwriting, closing, and post-closing departments throughout approval process. Acted as principal point of contact for all third parties.
+					
+					Managed individual pipeline averaging over twenty monthly loan closings while maintaining strict adherence to both federal (VA/FHA), state, and proprietary regulatory guidelines.
+					
+					Responsibilities included, but were not limited to, the vetting of all employment records, VA documentation, appraisals, incomes, credit histories, title work, encumbrances and insurance policies so as to establish qualification.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        OZTEK Manufacturing Pty. Ltd.
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">01/2011</span>
+					                            <span class="endDate"> - 12/2011</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Logistics Analyst</h4>
+					
+					            <p class="summary">Provided logistical support to home office through the coordination of suppliers, shippers, and intermediate entities.
+					
+					Produced broad market analysis (AUD/USD) currency forecasting, commodity price trends, interest rate analysis) in order to highlight areas in supply chain with elevated risk.
+					
+					Researched commodity, currency, and interest rate hedging vehicles (futures, ETFs, and swaps) to address this risk.</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/school/university-of-maryland/" target="_blank">
+					                            University of Maryland College Park <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">10/2004</span>
+					                            <span class="endDate"> - 05/2005</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Laboratory Intern | Center for Superconductivity Research</h4>
+					
+					            <p class="summary">•	Conducted thorough analysis of existing research concerning methods/techniques for mitigating the onset of decoherence between entangled particles due to interfering effects from the surrounding environment
+					
+					•	Created, through rigorous experimental development, a copper-epoxy microwave ‘powder’ filter capable of attenuating environmental background noise within a quantum system across a range of high frequencies
+					
+					•	Presented findings to a panel of physics and computer science luminaries at the 2005 Intel International Science & Engineering Fair where my teammate and I were awarded 2nd place in the Team Physics category</p>
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://www.linkedin.com/company/nasa-goddard-space-flight-center/" target="_blank">
+					                            NASA Goddard Space Flight Center <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">06/2003</span>
+					                            <span class="endDate"> - 08/2004</span>
+					                </h5>
+					            </div>
+					
+					            <h4>Research Intern | Heliophysics Science Division</h4>
+					
+					            <p class="summary">•	Prepared and maintained a class-10,000 cleanroom for the EUNIS (Extreme Ultraviolet Normal-Incidence Spectrograph) Mission research team
+					
+					•	Expedited rocket-casing assembly and assisted in the instrument’s optical alignment
+					
+					•	Calibrated sensitive laser optics integral to the EUNIS mission profile
+					
+					•	Prepared data array casings, vacuum-sealed instrument components, and provided technical and logistical support for high-G ‘shock-pulse’ testing to determine instrument flight viability and survivability
+					
+					•	Recognized for superlative performance with the Robert H. Goddard Award for Exceptional Achievement in Science</p>
+					
+					        </section>
+					</div>
+					<div class="container volunteer-container">
+					    <div class="title">
+					            <i class="fa fas fa-hands-helping"></i>
+					        <h3>Volunteer</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					    <section class="item">
+					        <div class="section-header clearfix">
+					            <h3 class="bold pull-left">
+					                    <a href="https://www.linkedin.com/company/491378" target="_blank">
+					                        AmeriCorps <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					            </h3>
+					            <h5 class="italic pull-right">
+					                        <span class="startDate">03/2017</span>
+					                        <span class="endDate"> - 05/2017</span>
+					            </h5>
+					        </div>
+					        <h5>Teaching Assistant</h5>
+					
+					        <p class="summary">Skinner Middle School (Intro to Web Development & Design)</p>
+					
+					    </section>
+					    <section class="item">
+					        <div class="section-header clearfix">
+					            <h3 class="bold pull-left">
+					                    <a href="https://www.linkedin.com/company/2652594" target="_blank">
+					                        Galvanize Inc <i class="fa fa-external-link" aria-hidden="true"></i>
+					                    </a>
+					            </h3>
+					            <h5 class="italic pull-right">
+					                        <span class="startDate">09/2017</span>
+					                        <span class="endDate"> - 12/2017</span>
+					            </h5>
+					        </div>
+					        <h5>Instructor - Amazon Alexa Skills Developer Workshop</h5>
+					
+					        <p class="summary">Educated workshop attendees in voice user interfaces (VUI) and speech synthesis markup language (SSML). Guided attendees through a hands-on implementation of core AWS services used in creating a fully deployable Alexa Skill. Services used included: AWS Lambda (Node.js), AWS Lex, AWS Polly, & AWS IAM. Guided attendees through Amazon Developer account creation and integration of Alexa SDK for deployment to Alexa Skills Store.</p>
+					
+					    </section>
+					</div>
+					<div class="container education-container">
+					    <div class="title">
+					            <i class="fa fas fa-user-graduate"></i>
+					        <h3>Education</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        University of Maryland College Park
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            <span class="startDate">12/2005</span>
+					                            <span class="endDate"> - 12/2010</span>
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">B.A. Economics (Statistics)</h4>
+					
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Galvanize Inc
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            12/2017
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">Full Stack Developer Web Development Immersive</h4>
+					
+					
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Elf-Spotting Academy
+					                </h3>
+					                <h5 class="italic pull-right">
+					                            12/2019
+					                </h5>
+					            </div>
+					
+					            <h4 class="display-inline">Bachelor&#x27;s degree Elf Spotting</h4>
+					
+					            <h5 class="display-inline gpa">GPA 🥇💯</h5>
+					
+					        </section>
+					</div>
+					<div class="container awards-container">
+					    <div class="title">
+					            <i class="fa fas fa-award"></i>
+					        <h3>Awards</h3>
+					        <div class="keyline"></div>
+					    </div>
+					
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        NASA Robert H. Goddard Award for Exceptional Achievement in Science
+					                </h3>
+					                <h5 class="italic pull-right">
+					                </h5>
+					            </div>
+					
+					            <h5 class="awarder">NASA</h5>
+					
+					            <p class="summary">&quot;Awarded to the EUNIS Team for creating an innovative sounding rocket instrument that exceeded its Comprehensive Mission Success criteria on both of its first two flights.&quot;</p>
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        Intel ISEF 2nd Place (Team Physics)
+					                </h3>
+					                <h5 class="italic pull-right">
+					                </h5>
+					            </div>
+					
+					            <h5 class="awarder">Intel ISEF (International Science &amp; Engineering Fair)</h5>
+					
+					            <p class="summary">Awarded 2nd Place in the Team Physics category at the 2005 Intel International Science &amp; Engineering Fair in Phoenix, AZ for the research, development, and demonstration of a &#x27;high-frequency noise attenuation prototype&#x27; for quantum computing systems.</p>
+					        </section>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

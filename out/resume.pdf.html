@@ -1,0 +1,1036 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tristan Gilford</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+body {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.42857143;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+}
+
+/* Typical page borders are awkward when rendered to PDF. */
+body.pdf {
+  background-color: #FFFFFF;
+}
+
+/* Adobe or wkhtmltopdf has issues with the <main> tag, so we use <div> for
+the PDF case, <main> for the HTML case, and style both via an ID. */
+#main {
+  background-color: #FFF;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
+}
+
+body.pdf > #main {
+  border: none;
+}
+
+#container > header {
+  padding-top: 6em;
+  padding-bottom: 1em;
+}
+
+body.pdf #container > header {
+  padding: 0;
+}
+
+#main > #container > section {
+  margin-left: 150px;
+  position: relative;
+  display: block;
+}
+
+section > div {
+  margin-bottom: 60px;
+}
+
+span.fa
+{
+  font-size: 56px;
+  position: absolute;
+  top: 37px;
+  transform: translateY(-50%);
+  left: -100px;
+  color: #1a4367;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #EEE;
+}
+
+.tenure, .keywords {
+  font-size: 75%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 46px;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 30px;
+  color: #4376a2;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+h3 {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+a, a:visited {
+  color: #428BCA;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.defunct {
+  color: #989898;
+  font-weight: bold;
+}
+
+#summary {
+  font-size: 150%;
+  margin-left: 0;
+  padding: 20px 0;
+}
+
+#summary > p > strong {
+  font-size: 1.25em;
+}
+
+#contact {
+  float: right;
+}
+
+#summary > header > .fa-info {
+  font-size: 70px;
+  /*letter-spacing: 5px; PDFs hate letter-spacing */
+  text-transform: uppercase;
+  font-weight: normal;
+  top: 50%;
+  left: -85px;
+  transform: translateY(-50%);
+}
+
+#summary h2 {
+  display: none;
+}
+
+
+.label-keyword {
+  display: inline-block;
+  background: #e8f4ff;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  border-radius: 5px;
+  margin-top: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.notes {
+  font-size: 10px;
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.card-skills {
+    position: relative;
+}
+.card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+}
+.card {
+    background: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 10px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+.skill-info > strong {
+  font-weight: 400;
+  font-size: 24px;
+  color: #1d1d1d;
+  line-height: 24px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.card-skills {
+  position: relative;
+}
+
+.space-top {
+    margin-top: 5px;
+}
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#elevator-pitch {
+  text-align: center;
+  font-size: 24px;
+  color: #BFC1C3;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.res-label {
+  font-style: italic;
+}
+</style>
+
+
+  </head>
+
+
+  <body>
+    <main id="main"> 
+      <div id="container">
+      <header>
+
+
+        <h1>Tristan Gilford</h1>
+
+        <div id="contact">
+          <div class="email"><a href="mailto:gilford.tristan@gmail.com">gilford.tristan@gmail.com</a></div>
+          
+          <div class="website"><a href="https://tristancod.es">https://tristancod.es</a></div>
+        </div>
+      </header>
+
+
+
+
+<hr>
+<section id="summary">
+    <header>
+      <span class="fa fa-lg fa-info"></span>  <h2>info</h2>
+    </header>
+    Jack-of-all-trades, master of some.
+</section>
+
+
+
+
+<hr>
+<section id="skills">
+  <header>
+  <h2>Skills</h2>
+  </header>
+  <span class="fa fa-lg fa-code"></span>
+  <ul class="list-unstyled">
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Amazon Web Services (AWS)</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Software Development</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>JavaScript</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Web Development</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Research</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Cloud Services</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Microservices</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Equities</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>PostgreSQL</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Databases</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Analytics</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>SQL</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Microsoft Excel</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Investments</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>MySQL</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Consulting</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Adobe Creative Suite</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Cloud Computing IaaS</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Tech-savvy</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Economics</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Amazon S3</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Github</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Space Systems</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Software Development Life Cycle (SDLC)</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Ubuntu</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Linux</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Node.js</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Amazon EC2</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Agile Methodologies</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Amazon RDS</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Cloud Infrastructure</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Solution Architecture</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>HTML5</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>CSS3</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Python</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Cloud Computing</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Financial Modeling</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Bash</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Shell Scripting</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Risk Management</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Web Design</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Twitter API</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Technology Advisory</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Financial Analysis</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Raspberry Pi</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Infrastructure as a Service (IaaS)</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Analysis</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Chatbot Design</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+      <li class="card card-nested card-skills">
+        <div class="skill-level" rel="tooltip" title="" data-placement="left">
+          <div class="skill-progress "></div>
+        </div>
+        <div class="skill-info">
+          <strong>Microsoft Office</strong>
+          <div class="space-top labels">
+          </div>
+        </div>
+      </li>
+  </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="employment">
+    <header>
+      <span class="fa fa-lg fa-building"></span>  <h2>employment</h2>
+    </header>
+
+<div>
+  <h3><em>Cloud Engineer</em>,
+    <a href="https://www.linkedin.com/company/wizards-of-the-coast/">Wizards of the Coast</a>
+    </h3>
+    <span class="tenure">2020-02 — 2021-02</span>
+  <p></p>
+</div>
+<div>
+  <h3><em>Cloud Architect</em>,
+    <a href="https://www.linkedin.com/company/cinelaya-corporation/">CINELAYA CORPORATION</a>
+    </h3>
+    <span class="tenure">2019-02 — 2020-02</span>
+  <p><p>Created design specifications for a serverless web application prioritizing an evolutionary architecture to help mitigate and adapt to future changes across the system, design, and business</p>
+<p>Outlined roadmap for abstracting application functionality into individual lightweight microservices in order to support dev team&#39;s migration of legacy ASP.NET codebase to modern Javascript-based frameworks and tooling</p>
+<p>Constrained enterprise software footprint across service tiers to reduce associated compute and database costs</p>
+<p>Conducted industry analysis to inform marketing strategy surrounding upcoming service launch. Identified key focus areas ensuring immediate user utility while validating value proposition to potential sponsors, partners, and investors</p>
+</p>
+</div>
+<div>
+  <h3><em>System Analyst I</em>,
+    <a href="https://www.linkedin.com/company/amazon-web-services/">Amazon Web Services</a>
+    </h3>
+    <span class="tenure">2018-02 — 2018-10</span>
+  <p><p>Database Services DevOps Team: GovCloud ITAR Operator for Amazon Relational Database Service (RDS)
+• Engaged with cross-platform development teams to implement modifications and new feature builds to RDS codebase according to internal change management protocol
+• Served in a recurrent (bi-weekly) on-call capacity addressing high-severity issues affecting RDS customer data plane &amp; service control plane
+• Streamlined tracking &amp; reporting of RDS operational performance metrics for weekly ops review meetings
+• Replicated commercial AWS Database Migration Service (DMS) database AMIs (Linux &amp; Windows) onto GovCloud partition
+• Conducted preliminary research for implementation of DMS for new GovCloud AWS region build</p>
+<p>Support Services DevOps Team: GovCloud ITAR Operator for Amazon Support API Service (SAPI)
+• Primary GovCloud liaison for Cape Town, SA-based development team
+• Migrated production EC2 capacity from legacy hardware to new capacity provisioning system
+• Intermediary for Application Security &amp; GovCloud compliance review processes prior to new region launch
+• Created, maintained, and white-listed internal &amp; external front-end VIPs for prod &amp; testing environments</p>
+</p>
+</div>
+<div>
+  <h3><em>Director Of Technology</em>,
+    Denver Biolabs
+    </h3>
+    <span class="tenure">2017-11 — 2018-02</span>
+  <p><p>Implemented full-scale rebuild and redesign of existing infrastructure, architecture, web and database tiers, as well as payment and email systems</p>
+<p>Pursued and orchestrated strategic partnerships</p>
+</p>
+</div>
+<div>
+  <h3><em>Portfolio Management Analyst</em>,
+    <a href="https://www.linkedin.com/company/indpendent-contractor/">Self Employed</a>
+    </h3>
+    <span class="tenure">2014-01 — 2016-06</span>
+  <p><p>Performed quantitative portfolio equity analysis on clients&#39; individual investment and retirement accounts</p>
+<p>Determined appropriate distribution of funds across financial instruments, market sectors, and geographic regions according to clients&#39; financial objectives</p>
+<p>Provided multiple asset allocation strategies to achieve clients&#39; stated goals while minimizing financial outlay needed for commission payments, exit fees, and capital gains tax obligations</p>
+</p>
+</div>
+<div>
+  <h3><em>Capital &amp;amp; Secondary Markets Analyst</em>,
+    <a href="https://www.linkedin.com/company/newday-usa/">NewDay USA</a>
+    </h3>
+    <span class="tenure">2013-02 — 2013-09</span>
+  <p><p>Position reported directly to VP of Finance and required high-level performance, adaptability, and competency with minimal direct supervision. In addition to secondary-specific responsibilities, the scope of this position was expanded to include direct oversight of certain critical processes native to other divisions.</p>
+<ul>
+<li>MBS Pool Allocation and Securitization</li>
+<li>Trade Execution and Portfolio Hedging</li>
+<li>Database Maintenance, Analysis, Modeling, and Reporting</li>
+<li>Affinity Partnership (Green Planet Servicing)</li>
+<li>Reverse Mortgage Division</li>
+<li>Subservicing Oversight</li>
+<li>Product Rate-Pricing and Risk Analysis</li>
+<li>Compliance Support</li>
+</ul>
+</p>
+</div>
+<div>
+  <h3><em>Mortgage Loan Processor</em>,
+    <a href="https://www.linkedin.com/company/newday-usa/">NewDay USA</a>
+    </h3>
+    <span class="tenure">2012-09 — 2013-02</span>
+  <p><p>Position reported to the manager of forward processing and served as principal intermediary between  sales, underwriting, closing, and post-closing departments throughout approval process. Acted as principal point of contact for all third parties.</p>
+<p>Managed individual pipeline averaging over twenty monthly loan closings while maintaining strict adherence to both federal (VA/FHA), state, and proprietary regulatory guidelines.</p>
+<p>Responsibilities included, but were not limited to, the vetting of all employment records, VA documentation, appraisals, incomes, credit histories, title work, encumbrances and insurance policies so as to establish qualification.</p>
+</p>
+</div>
+<div>
+  <h3><em>Logistics Analyst</em>,
+    OZTEK Manufacturing Pty. Ltd.
+    </h3>
+    <span class="tenure">2011-01 — 2011-12</span>
+  <p><p>Provided logistical support to home office through the coordination of suppliers, shippers, and intermediate entities.</p>
+<p>Produced broad market analysis (AUD/USD) currency forecasting, commodity price trends, interest rate analysis) in order to highlight areas in supply chain with elevated risk.</p>
+<p>Researched commodity, currency, and interest rate hedging vehicles (futures, ETFs, and swaps) to address this risk.</p>
+</p>
+</div>
+<div>
+  <h3><em>Laboratory Intern | Center for Superconductivity Research</em>,
+    <a href="https://www.linkedin.com/school/university-of-maryland/">University of Maryland College Park</a>
+    </h3>
+    <span class="tenure">2004-10 — 2005-05</span>
+  <p><p>•    Conducted thorough analysis of existing research concerning methods/techniques for mitigating the onset of decoherence between entangled particles due to interfering effects from the surrounding environment</p>
+<p>•    Created, through rigorous experimental development, a copper-epoxy microwave ‘powder’ filter capable of attenuating environmental background noise within a quantum system across a range of high frequencies</p>
+<p>•    Presented findings to a panel of physics and computer science luminaries at the 2005 Intel International Science &amp; Engineering Fair where my teammate and I were awarded 2nd place in the Team Physics category</p>
+</p>
+</div>
+<div>
+  <h3><em>Research Intern | Heliophysics Science Division</em>,
+    <a href="https://www.linkedin.com/company/nasa-goddard-space-flight-center/">NASA Goddard Space Flight Center</a>
+    </h3>
+    <span class="tenure">2003-06 — 2004-08</span>
+  <p><p>•    Prepared and maintained a class-10,000 cleanroom for the EUNIS (Extreme Ultraviolet Normal-Incidence Spectrograph) Mission research team</p>
+<p>•    Expedited rocket-casing assembly and assisted in the instrument’s optical alignment</p>
+<p>•    Calibrated sensitive laser optics integral to the EUNIS mission profile</p>
+<p>•    Prepared data array casings, vacuum-sealed instrument components, and provided technical and logistical support for high-G ‘shock-pulse’ testing to determine instrument flight viability and survivability</p>
+<p>•    Recognized for superlative performance with the Robert H. Goddard Award for Exceptional Achievement in Science</p>
+</p>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="education">
+    <header>
+      <span class="fa fa-lg fa-mortar-board"></span>  <h2>education</h2>
+    </header>
+<div>
+<h3>
+University of Maryland College Park
+</h3>
+<span class="tenure">2005-12 — 2010-12</span>
+
+</div>
+<div>
+<h3>
+Galvanize Inc
+</h3>
+<span class="tenure">2017-12</span>
+
+</div>
+<div>
+<h3>
+Elf-Spotting Academy
+</h3>
+<span class="tenure">2019-12</span>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<section id="service">
+    <header>
+      <span class="fa fa-lg fa-child"></span>  <h2>service</h2>
+    </header>
+    <div>
+    <h3><em>Teaching Assistant</em>,
+      <a href="https://www.linkedin.com/company/491378">AmeriCorps</a>
+    </h3>
+    <span class="tenure">2017-03 — 2017-05</span>
+    <p><p>Skinner Middle School (Intro to Web Development &amp; Design)</p>
+</p>
+    </div>
+    <div>
+    <h3><em>Instructor - Amazon Alexa Skills Developer Workshop</em>,
+      <a href="https://www.linkedin.com/company/2652594">Galvanize Inc</a>
+    </h3>
+    <span class="tenure">2017-09 — 2017-12</span>
+    <p><p>Educated workshop attendees in voice user interfaces (VUI) and speech synthesis markup language (SSML). Guided attendees through a hands-on implementation of core AWS services used in creating a fully deployable Alexa Skill. Services used included: AWS Lambda (Node.js), AWS Lex, AWS Polly, &amp; AWS IAM. Guided attendees through Amazon Developer account creation and integration of Alexa SDK for deployment to Alexa Skills Store.</p>
+</p>
+    </div>
+</section>
+<hr>
+<section id="recognition">
+    <header>
+      <span class="fa fa-lg fa-trophy"></span>  <h2>recognition</h2>
+    </header>
+    <div>
+    <h3><em>NASA Robert H. Goddard Award for Exceptional Achievement in Science</em>, NASA</h3>
+    <span class="tenure">2008</span>
+    <p>&quot;Awarded to the EUNIS Team for creating an innovative sounding rocket instrument that exceeded its Comprehensive Mission Success criteria on both of its first two flights.&quot;</p>
+
+    </div>
+    <div>
+    <h3><em>Intel ISEF 2nd Place (Team Physics)</em>, Intel ISEF (International Science &amp; Engineering Fair)</h3>
+    <span class="tenure">2005</span>
+    <p>Awarded 2nd Place in the Team Physics category at the 2005 Intel International Science &amp; Engineering Fair in Phoenix, AZ for the research, development, and demonstration of a &#39;high-frequency noise attenuation prototype&#39; for quantum computing systems.</p>
+
+    </div>
+</section>
+
+      </div>
+    </main>
+  </body>
+</html>
